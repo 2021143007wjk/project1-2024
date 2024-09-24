@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ChatGPT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src='chat.js'></script>
+</head>
+<body>
+
+    <h1>우정광 개발</h1>
+    <div class="container shadow mx-auto mt-5 p-5 w-70">
+        <div class="input-group">
+            <input id="item" type="text" class="form-control" placeholder="질문입력">
+            <button onclick="talk()" class="btn btn-info">확인</button>
+        </div>
+        <ul id="qlist" class="list-group">
+        </ul>
+    </div>
+</body>
+</html>
