@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중간고사 대체 과제</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="vision.js"></script>
+    
+    <style>
+        #left{
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+        #right{
+            width: 400px;
+            height: 400px;
+            border: 5px solid gray;
+            position: absolute;
+            left: 500px;
+            top: 105px;
+        }
+        #box{
+            position: absolute;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>구글 비젼 API 우정광</h1>
+    <div>
+        <label for="filebtn" style="background-color: gray; border-width: 2px; border-radius: 0.5em">파일 업로드</label>
+        <input id="filebtn" type="file" onchange="uploadFiles(this.files)" style="display: none;">
+        <!-- 여기를 조금 더 잘 꾸며보자 -->
+    </div>
+    <!-- <div id="box" class="1"></div> -->
+    <div id="left">
+        <img id="gimage" usemap="imgmap" style="border:5px solid #555" width="400" height="400">
+        <input type="button" onclick="analyze()" value="이미지분석" style="background-color: white; border-color: black; border-radius: 0.5em">
+    </div>
+    <font size = 10000>&#8594</font>
+    <div id="right">
+        분석하고 싶은 얼굴 사진을 넣어 주세요.
+    </div>
+</body>
+</html>
